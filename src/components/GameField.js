@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function GameField({ data, handleClick }) {
 
-    let field = data
+    let field = data.current
 
     return (
         <div className='grid justify-items-center overflow-hidden'>
