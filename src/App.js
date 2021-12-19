@@ -115,7 +115,7 @@ function App() {
   return (
     <div className="App">
       <Navbar run={run} runGame={runGame} handleRun={toggleRun} reset={resetGrid} />
-      <GameField data={field} handleClick={selectCell} />
+      <GameField run={run} data={field} handleClick={selectCell} />
     </div>
   );
 }

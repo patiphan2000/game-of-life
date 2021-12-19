@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function GameField({ data, handleClick }) {
+export default function GameField({ data, handleClick, run }) {
 
     let field = data.current
 
@@ -12,8 +12,8 @@ export default function GameField({ data, handleClick }) {
                         {row.map((cell, j) => { 
                             return (
                                 <div key={j} className={`w-7 h-7 border-2 border-slate-200
-                                ${cell>0? 'bg-black':'bg-white'} cursor-pointer
-                                hover:bg-slate-300`} 
+                                ${cell>0? 'bg-black':'bg-white'} ${run? 'cursor-auto':'cursor-pointer'}
+                                ${run? '':'hover:bg-slate-300'}`} 
                                 onClick={()=>{handleClick(i,j);}}
                                 // onDragEnter={()=>{handleClick(i,j);}}
                                 ></div>
