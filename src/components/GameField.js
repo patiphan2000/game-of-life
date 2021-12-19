@@ -4,10 +4,6 @@ export default function GameField({ data, handleClick }) {
 
     let field = data
 
-    const checkMouseDown = () => {
-
-    }
-
     return (
         <div className='grid justify-items-center overflow-hidden'>
             <div className='flex flex-col p-auto'>
