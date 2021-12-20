@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css';
+import Footer from './components/Footer';
 import GameField from './components/GameField';
 import Navbar from './components/Navbar';
 
@@ -116,6 +117,7 @@ function App() {
     <div className="App">
       <Navbar run={run} runGame={runGame} handleRun={toggleRun} reset={resetGrid} />
       <GameField run={run} data={field} handleClick={selectCell} />
+      <Footer />
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function GameField({ data, handleClick, run }) {
     let field = data.current
 
     return (
-        <div className='grid justify-items-center overflow-hidden'>
+        <div className='grid justify-items-center overflow-hidden mt-4'>
             <div className='flex flex-col p-auto'>
                 {field.map((row, i) => {
                     return <div key={i} className='flex'> 
