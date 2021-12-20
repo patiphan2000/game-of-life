@@ -11,10 +11,10 @@ export default function Navbar({ run, runGame, handleRun, reset }) {
                 <button className={`rounded-full font-semibold w-20 h-10 
                 ease-linear duration-100
                 ${!run? 'bg-green-600 hover:bg-green-300':'bg-red-600 hover:bg-red-300'}`} onClick={handleRun}>{run? 'STOP':'START'}</button>
-                <button className='text-4xl text-violet-200
-                hover:text-violet-400' onClick={runGame}><BsFillArrowRightCircleFill /></button>
+                <button className='text-4xl text-violet-800
+                hover:text-violet-400 ease-linear' onClick={runGame}><BsFillArrowRightCircleFill /></button>
             </div>
-            <button className={`text-2xl text-violet-200 ml-2 
+            <button className={`text-2xl text-violet-800 ml-2 ease-linear
             ${run? 'cursor-not-allowed':'hover:text-violet-400'}`} onClick={reset}><FaUndoAlt /></button>
         </div>
     )
