@@ -25,6 +25,9 @@ This game board is wrapped around, it means the cell in the most right is connec
 
 ---
 
+### Example
+![example_useage](https://github.com/patiphan2000/game-of-life/blob/main/public/game_of_life_example.gif)
+
 #### tools
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
